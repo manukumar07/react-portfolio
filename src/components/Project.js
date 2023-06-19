@@ -78,29 +78,23 @@ const Project = () => {
                   <img src={project_info.img} alt="" className="rounded-lg" />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex gap-3">
-                    <a
-                      href="./"
-                      target="_blank"
-                      className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                    >
-                      Github
-                    </a>
-                    <a
-                      href=",."
-                      target="_blank"
-                      className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                    >
-                      Live Demo
-                    </a>
+                    <a href="./" target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Github </a>
+                    <a href=",." target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Live Demo</a>
                   </div>
-                </div>
+                  </div>
+                  
+                  
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div className="lg:block hidden">
+
+
+      
+
+        {/* <div className="lg:block hidden">
           <img src="./images/manu.jpg" alt="" className="w-full object-cover bg-cyan-600 rounded-xl"/>
-        </div>
+        </div> */}
       </div>
     </section>
   );

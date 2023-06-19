@@ -24,6 +24,7 @@ const Contact = () => {
           <form className="flex flex-col flex-1 gap-4">
             <input type="text" placeholder="Your Name" />
             <input type="Email" placeholder="Your Email Address" />
+            <input type="number" placeholder="Mobile Number" />
             <textarea placeholder="Your Message" rows={10}></textarea>
             <button className="btn-primary w-fit" >Send Message</button>
           </form>

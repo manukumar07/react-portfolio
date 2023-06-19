@@ -1,6 +1,5 @@
 import React from "react";
 import About from "./About";
-// import hero from "../assets/images/hero.png";
 import Skills from './Skills';
 import Project from './Project';
 import Contact from "../Contact";
@@ -15,12 +14,18 @@ const Home = () => {
   return (
     <>
     <section
-      id="home"
-      className="min-h-screen flex py-10 md:flex-row flex-col items-center"
-    >
-      <div className="flex-1 flex items-center justify-center h-full">
+      id="home" className="min-h-screen flex py-10 md:flex-row flex-col items-center">
+      {/* <div className="flex-1 flex items-center justify-center h-full">
         <img src="./images/manu.jpg" alt="" className="md:w-11/12 h-full object-cover w-full object-cover bg-cyan-600 rounded-xl" />
-      </div>
+      </div> */}
+      <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
+            <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
+              <img
+                src="./images/manu.jpg"
+                alt=""
+                className="w-full object-cover bg-cyan-600 rounded-xl" />
+            </div>
+          </div>
       <div className="flex-1">
         <div className="md:text-left text-center">
           <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
