@@ -8,6 +8,8 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Routes,Route} from 'react-router-dom';
+import Project from './components/Project';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
         <Route  path="/" element={<Home/>}/>
         <Route  path="/about" element={<About/>} />
         <Route  path="/skills" element={<Skills/>} />
+        <Route  path="/project" element={<Project/>} />
+        <Route  path="/contact" element={<Contact/>} />
+
       </Routes>
       <Footer />
      </Router>
