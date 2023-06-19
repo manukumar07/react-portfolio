@@ -1,5 +1,10 @@
 import React from "react";
+import About from "./About";
 // import hero from "../assets/images/hero.png";
+import Skills from './Skills';
+import Project from './Project';
+import Contact from "../Contact";
+import Blogs from "./Blogs";
 const Home = () => {
   const social_media = [
     "logo-instagram",
@@ -8,6 +13,7 @@ const Home = () => {
     "logo-twitter",
   ];
   return (
+    <>
     <section
       id="home"
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
@@ -41,6 +47,14 @@ const Home = () => {
         </div>
       </div>
     </section>
+    <helment>
+    <About />
+    <Skills />
+    <Project />
+    <Contact />
+    <Blogs />
+    </helment>
+    </>
     
   );
 };
