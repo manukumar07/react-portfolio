@@ -4,10 +4,11 @@ import Skills from './Skills';
 import Project from './Project';
 import Contact from "../Contact";
 import Blogs from "./Blogs";
+import Bot from "./Bot";
 const Home = () => {
   const social_media = [
     "logo-instagram",
-    "logo-facebook",
+    "logo-github",
     "logo-linkedin",
     "logo-twitter",
   ];
@@ -18,12 +19,10 @@ const Home = () => {
       {/* <div className="flex-1 flex items-center justify-center h-full">
         <img src="./images/manu.jpg" alt="" className="md:w-11/12 h-full object-cover w-full object-cover bg-cyan-600 rounded-xl" />
       </div> */}
-      <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
-            <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
+      <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center mt-4">
+            <div className="lg:w-80 h-full relative sm:w-8/10 w-10/12 max-w-sm aboutImg ">
               <img
-                src="./images/manu.jpg"
-                alt=""
-                className="w-full object-cover bg-cyan-600 rounded-xl" />
+                src="./images/manu.jpg" alt="" className="w-full object-cover bg-cyan-600 rounded-xl" />
             </div>
           </div>
       <div className="flex-1">
@@ -33,7 +32,7 @@ const Home = () => {
               Hello!
               <br />
             </span>
-            My Name is <span>Manu Kumar Pal</span>
+            <span>Manu Kumar Pal</span>
           </h1>
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
             Full stack Developer
@@ -57,7 +56,8 @@ const Home = () => {
     <Skills />
     <Project />
     <Contact />
-    <Blogs />
+    <Blogs /> 
+    <Bot />
     </helment>
     </>
     

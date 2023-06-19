@@ -48,6 +48,7 @@
 
 
 import React, { useEffect, useState } from "react";
+import Switcher from "../Mode/Switcher";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);

@@ -29,7 +29,7 @@ const About = () => {
                       {content.count}
                       <span className="text-cyan-600">+</span>{" "}
                     </h3>
-                    <span className="md:text-base text-xs">{content.text}</span>
+                    <span className="md:tex6-base text-xs">{content.text}</span>
                   </div>
                 ))}
               </div>
