@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   const info = [
-    { text: "Years experience", count: "04" },
-    { text: "Completed Projects", count: "24" },
-    { text: "Companies Work", count: "06" },
+    { text: "Years experience", count: "0-1" },
+    { text: "Completed Projects", count: "08" },
+    { text: "Companies Work", count: "00" },
   ];
   return (
     <section id="about" className="py-10 text-white">
@@ -12,7 +12,7 @@ const About = () => {
         <h3 className="text-4xl font-semibold">
           About <span className="text-cyan-600">Me</span>
         </h3>
-        <p className="text-gray-400 my-3 text-lg">My introduction</p>
+        <p className="text-gray-200 my-3 text-lg">My Introduction</p>
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
             <div className="text-gray-300 my-3">
@@ -35,8 +35,8 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="./src/assets/Code_a_program.pdf" download>
-                <button className="btn-primary">Download CV</button>
+              <a href="./pdf/resume.pdf" download>
+                <button className="btn-primary bg-0ef">Download CV</button>
               </a>
             </div>
           </div>

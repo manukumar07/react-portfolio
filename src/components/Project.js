@@ -82,8 +82,6 @@ const Project = () => {
                     <a href=",." target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Live Demo</a>
                   </div>
                   </div>
-                  
-                  
               </SwiperSlide>
             ))}
           </Swiper>
