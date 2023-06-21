@@ -48,7 +48,7 @@
 
 
 import React, { useEffect, useState } from "react";
-import Switcher from "../Mode/Switcher";
+// import Switcher from "../Mode/Switcher";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -72,9 +72,8 @@ const Navbar = () => {
     <nav
       className={`fixed w-full left-0 top-0 z-[999] ${
         sticky ? "bg-white/60  text-gray-900" : "text-white"
-      }`}
-    >
-      <div className="flex items-center justify-between">
+      }`} >
+       <div className="flex items-center justify-between">
         <div className="mx-7">
           <h4 className="text-4xl uppercase font-bold">
             <span className="text-cyan-500">Portfolio...</span>
@@ -110,9 +109,11 @@ const Navbar = () => {
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
             ))}
+
           </ul>
         </div>
-      </div>
+      </div> 
+        
     </nav>
   );
 };

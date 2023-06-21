@@ -25,9 +25,8 @@ const Home = () => {
         <img src="./images/manu.jpg" alt="" className="md:w-11/12 h-full object-cover w-full object-cover bg-cyan-600 rounded-xl" />
       </div> */}
       <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center mt-4">
-            <div className="lg:w-80 h-full relative sm:w-8/10 w-10/12 max-w-sm aboutImg ">
-              <img
-                src="./images/manu.jpg" alt="" className="w-full object-cover bg-cyan-600 rounded-xl" />
+            <div className="lg:w-80 h-full relative sm:w-8/10 w-10/12 max-w-sm aboutImg">
+              <img src="./images/manu.jpg" alt="" className="w-full object-cover bg-cyan-600 rounded-xl" />
             </div>
           </div>
       <div className="flex-1">
@@ -73,6 +72,7 @@ const Home = () => {
     <About />
     <Skills />
     <Project />
+    {/* <useThemeSwitcher /> */}
     <Contact />
     <Blogs /> 
     <Bot />

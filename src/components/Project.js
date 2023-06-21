@@ -50,14 +50,14 @@ const Project = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
+        <p className="text-gray-200 mt-3 text-lg">My awesome Project</p>
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
         <div className="lg:w-2/3 w-full">
           <Swiper
             slidesPerview={1.2}
-            spaceBetween={20}
+            spaceBetween={40}
             breakpoints={{
               768: {
                 slidesPerView: 2,
@@ -78,8 +78,8 @@ const Project = () => {
                   <img src={project_info.img} alt="" className="rounded-lg" />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex gap-3">
-                    <a href="./" target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Github </a>
-                    <a href=",." target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Live Demo</a>
+                    <a href="./images/manu.jpg" target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Github </a>
+                    <a href="./images/manu.jpg" target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Live Demo</a>
                   </div>
                   </div>
               </SwiperSlide>
