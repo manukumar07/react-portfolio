@@ -60,7 +60,6 @@ const Navbar = () => {
     { name: "PROJECTS", link: "#projects" },
     { name: "CONTACT", link: "#contact" },
     { name: "BLOGs", link: "#Blogs" },
-
   ];
   useEffect(() => {
     window.addEventListener("scroll", () => {
