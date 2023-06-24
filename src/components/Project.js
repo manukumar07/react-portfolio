@@ -60,8 +60,7 @@ const Project = () => {
             spaceBetween={40}
             breakpoints={{
               768: {
-                slidesPerView: 2,
-              },
+                slidesPerView: 2, },
             }}
             loop={true}
             autoplay={{
