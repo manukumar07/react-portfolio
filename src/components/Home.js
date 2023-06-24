@@ -9,6 +9,8 @@ import Bot from "./Bot";
 // import Typewriter from 'typewriter-effect';
 import { Typewriter } from 'react-simple-typewriter'
 import "./Home.css"
+// import Mode from "./Mode/Mode";
+// import Login from "./Login/Login";
 
 const Home = () => {
   const social_media = [
@@ -74,8 +76,10 @@ const Home = () => {
     <Project />
     {/* <useThemeSwitcher /> */}
     <Contact />
+    {/* <Login /> */}
     <Blogs /> 
     <Bot />
+    {/* <Mode /> */}
     </helment>
     </>
     

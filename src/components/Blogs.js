@@ -1,10 +1,13 @@
 import React from 'react'
+// import Navbar from "./Blogs/Navbar"
 
 const Blogs = () => {
   return (
-    <div>
-      <h1>he</h1>
-    </div>
+    <>
+     <hello>
+
+     </hello>
+    </>
   )
 }
 
