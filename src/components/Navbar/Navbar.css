@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
   margin: 0;
@@ -26,12 +26,10 @@ body {
 /* .logo {
 } */
 
-.menu-icon {
+/* .menu-icon {
   display: none;
 }
-/* 
-.nav-elements {
-} */
+
 
 .nav-elements ul {
   display: flex;
@@ -102,10 +100,15 @@ body {
     margin-right: unset;
     margin-top: 22px;
   }
-}
+}  */
 body{
   /* background-color: rgb(8 145 178 ); */
 
 	background-color: rgb(23 37 84);
   
+}
+#icon{
+  width:10px;
+  height:25px;
+  cursor:pointer;
 }

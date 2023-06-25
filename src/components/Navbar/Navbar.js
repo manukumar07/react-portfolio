@@ -61,12 +61,15 @@ const Navbar = () => {
     { name: "CONTACT", link: "#contact" },
     { name: "BLOGs", link: "#Blogs" },
   ];
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const nav = document.querySelector("nav");
       window.scrollY > 0 ? setSticky(true) : setSticky(false);
     });
+  
   }, []);
+  // const [darkMode, setDarkMode] = React.useState(true)
   return (
 
     <nav
@@ -81,7 +84,7 @@ const Navbar = () => {
         </div>
         <div
           className={` ${
-            sticky ? "md:bg-white/0 bg-white" : "bg-white"} text-gray-900 md:block hidden px-7 py-2 font-medium  rounded-bl-full`} >
+          sticky ? "md:bg-white/0 bg-white" : "bg-white"} text-gray-900 md:block hidden px-7 py-2 font-medium  rounded-bl-full`} >
 
           <ul className="flex items-center gap-1 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
@@ -108,8 +111,9 @@ const Navbar = () => {
                 <a href={menu?.link}>{menu?.name}</a> 
               </li>
             ))}
-          </ul>
+        </ul>
         </div>
+          {/* <img src="./images/moon1.png" id="icon" alt="ico"></img> */}
       </div> 
         
     </nav>
