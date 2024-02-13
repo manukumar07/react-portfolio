@@ -3,7 +3,7 @@ import About from "./About";
 import Skills from './Skills';
 import Project from './Project';
 import Contact from "../Contact";
-import Bot from "./Bot";
+// import Bot from "./Bot";
 import { Typewriter } from 'react-simple-typewriter'
 import "./Home.css"
 
@@ -24,7 +24,7 @@ const Home = () => {
       </div> */}
       <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center mt-4">
             <div className="lg:w-80 h-full relative sm:w-8/10 w-10/12 max-w-sm aboutImg">
-              <img src="./images/manu.jpg" alt="" className="w-full object-cover bg-cyan-600 rounded-xl" />
+              <img src="./images/manu (1) (1).jpg" alt="" className="w-full object-cover bg-cyan-600 rounded-xl" />
             </div>
           </div>
       <div className="flex-1">
@@ -71,7 +71,7 @@ const Home = () => {
     <Skills />
     <Project />
     <Contact />
-    <Bot />
+    {/* <Bot /> */}
     </helment>
     </>
     

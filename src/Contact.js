@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-// import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,9 +9,11 @@ const Contact = () => {
     message: "",
   });
 
+  const [showScrollUp, setShowScrollUp] = useState(false);
+
   const contact_info = [
     { logo: "mail", text: "palmanukumar53@gmai.com" },
-    { logo: "logo-whatsapp", text: "123 456 780" },
+    { logo: "logo-whatsapp", text: "9817859713" },
     { logo: "location", text: "demo location" },
   ];
 
@@ -26,7 +27,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Use your Email.js template and service ID
     const templateParams = {
       from_name: formData.name,
       from_email: formData.email,
@@ -34,12 +34,11 @@ const Contact = () => {
       message: formData.message,
     };
 
-    // Replace 'your_service_id' and 'your_template_id' with your actual Email.js service and template IDs
     emailjs.send(
       "",
       "",
       templateParams,
-      ""  // Replace 'your_user_id' with your actual Email.js user ID
+      ""
     )
     .then(
       (response) => {
@@ -51,6 +50,26 @@ const Contact = () => {
       }
     );
   };
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowScrollUp(true);
+    } else {
+      setShowScrollUp(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <section id="contact" className="py-10 px-3 text-white">
@@ -111,6 +130,16 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      {/* Scroll-up button */}
+      {showScrollUp && (
+        <div
+          className="fixed bottom-6 right-6 p-3 rounded-full bg-cyan-600 cursor-pointer"
+          onClick={scrollToTop}
+        >
+          <ion-icon name="arrow-up-outline" class="text-white text-xl"></ion-icon>
+        </div>
+      )}
     </section>
   );
 };

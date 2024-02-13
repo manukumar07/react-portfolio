@@ -1,18 +1,16 @@
-
-
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
-  
+
   const menuLinks = [
     { name: "HOME", link: "/" },
     { name: "ABOUT", link: "#about" },
     { name: "SKILLS", link: "#skills" },
     { name: "PROJECTS", link: "#projects" },
     { name: "CONTACT", link: "#contact" },
-    { name: "BLOGs", link: "#Blogs" },
+    // { name: "BLOGs", link: "#Blogs" },
   ];
 
   useEffect(() => {

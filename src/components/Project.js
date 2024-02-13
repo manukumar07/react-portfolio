@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -69,24 +68,17 @@ const Project = () => {
             {projects.map((project_info, i) => (
               <SwiperSlide key={i}>
                 <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
-                  <img src={project_info.img} alt="" className="rounded-lg" />
+                  <img src={project_info.name} alt="" className="rounded-lg" />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex gap-3">
-                    <a href="./images/manu.jpg" target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Github </a>
-                    <a href="./images/manu.jpg" target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Live Demo</a>
+                    <a href=" " target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Github </a>
+                    <a href=" " target="_blank" className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Live Demo</a>
                   </div>
                   </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-
-
-      
-
-        {/* <div className="lg:block hidden">
-          <img src="./images/manu.jpg" alt="" className="w-full object-cover bg-cyan-600 rounded-xl"/>
-        </div> */}
       </div>
     </section>
   );
