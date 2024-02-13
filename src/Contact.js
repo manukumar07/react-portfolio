@@ -36,10 +36,10 @@ const Contact = () => {
 
     // Replace 'your_service_id' and 'your_template_id' with your actual Email.js service and template IDs
     emailjs.send(
-      "service_r0lhyl1",
-      "template_bgku0zp",
+      "",
+      "",
       templateParams,
-      "B5WyMmZY3zWa_LjPK"  // Replace 'your_user_id' with your actual Email.js user ID
+      ""  // Replace 'your_user_id' with your actual Email.js user ID
     )
     .then(
       (response) => {
