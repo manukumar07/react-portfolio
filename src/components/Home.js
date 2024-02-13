@@ -3,7 +3,6 @@ import About from "./About";
 import Skills from './Skills';
 import Project from './Project';
 import Contact from "../Contact";
-import Blogs from "./Blogs";
 import Bot from "./Bot";
 import { Typewriter } from 'react-simple-typewriter'
 import "./Home.css"
@@ -40,7 +39,7 @@ const Home = () => {
           <h4 className="  md:text-3xl text-lg md:leading-normal leading-5 mt-3 font-bold text-gray-100 " >
           <span>I'm </span><p className="p">
           <Typewriter 
-            words={['Frontend Developer', 'Full Stack Developer', 'Java Developer', 'Reactjs.Developer']}
+            words={['Frontend Developer', 'Full Stack Developer', 'Java Developer', 'Reactjs.Developer', 'Mern Stack Developer']}
             loop={100}
             cursor
             cursorStyle='|'
@@ -72,7 +71,6 @@ const Home = () => {
     <Skills />
     <Project />
     <Contact />
-    <Blogs /> 
     <Bot />
     </helment>
     </>

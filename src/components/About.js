@@ -17,10 +17,25 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                ratione quibusdam doloribus pariatur consequuntur sint.
-                Reprehenderit cupiditate possimus facere quasi voluptatem?
+                Hi, I'm Manu Kumar Pal, a passionate developer with expertise in
+                various technologies. My journey in the world of programming
+                began with a passion for creating impactful web applications.
+                With expertise in the MERN (MongoDB, Express.js, React, Node.js)
+                stack, I've successfully developed and deployed scalable and
+                efficient web solutions. From crafting responsive and intuitive
+                frontends using React to building robust and RESTful APIs with
+                Node.js and Express, I enjoy the entire spectrum of Full Stack
+                development. In addition to my proficiency in the MERN stack,
+                I'm well-versed in Java and C. These languages have been
+                instrumental in my journey, allowing me to develop versatile and
+                performant applications. I believe in the power of clean code,
+                continuous learning, and collaborative problem-solving. Whether
+                it's working on challenging projects, exploring new
+                technologies, or contributing to open-source initiatives, I'm
+                always eager to expand my skill set and stay ahead in the
+                dynamic world of software development. I enjoy creating web
+                applications and exploring new technologies to enhance my
+                skills.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (

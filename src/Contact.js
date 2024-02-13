@@ -1,14 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+// import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
+
   const contact_info = [
     { logo: "mail", text: "palmanukumar53@gmai.com" },
     { logo: "logo-whatsapp", text: "123 456 780" },
-    {
-      logo: "location",
-      text: "demo location",
-    },
+    { logo: "location", text: "demo location" },
   ];
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Use your Email.js template and service ID
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      mobile: formData.mobile,
+      message: formData.message,
+    };
+
+    // Replace 'your_service_id' and 'your_template_id' with your actual Email.js service and template IDs
+    emailjs.send(
+      "service_r0lhyl1",
+      "template_bgku0zp",
+      templateParams,
+      "B5WyMmZY3zWa_LjPK"  // Replace 'your_user_id' with your actual Email.js user ID
+    )
+    .then(
+      (response) => {
+        console.log("Email sent successfully:", response);
+        // You can handle success state or redirect the user to a thank you page.
+      },
+      (error) => {
+        console.error("Failed to send email:", error);
+      }
+    );
+  };
+
   return (
     <section id="contact" className="py-10 px-3 text-white">
       <div className="text-center mt-8">
@@ -21,14 +64,36 @@ const Contact = () => {
           className="mt-16 flex md:flex-row flex-col
          gap-5 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-          <form className="flex flex-col flex-1 gap-4">
-            <input type="text" placeholder="Your Name" />
-            <input type="Email" placeholder="Your Email Address" />
-            <input type="number" placeholder="Mobile Number" />
-            <textarea placeholder="Your Message" rows={10}></textarea>
-            <button className="btn-primary w-fit" >Send Message</button>
+          <form className="flex flex-col flex-1 gap-4" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              onChange={handleChange}
+            />
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              name="email"
+              onChange={handleChange}
+            />
+            <input
+              type="tel"
+              placeholder="Mobile Number"
+              name="mobile"
+              onChange={handleChange}
+            />
+            <textarea
+              placeholder="Your Message"
+              rows={10}
+              name="message"
+              onChange={handleChange}
+            ></textarea>
+            <button type="submit" className="btn-primary w-fit">
+              Send Message
+            </button>
           </form>
-          <div className="flex flex-col  gap-7 ">
+          <div className="flex flex-col gap-7">
             {contact_info.map((contact, i) => (
               <div
                 key={i}

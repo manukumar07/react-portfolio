@@ -9,35 +9,35 @@ const Project = () => {
   const projects = [
     {
       // img: project1,
-      name: "Movie App",
-      github_link: "",
-      live_link: "",
+      name: "Quiz-Website",
+      github_link: "https://github.com/manukumar07/Quizz-Website",
+      // live_link: "",
     },
     {
       // img: project2,
-      name: "Job search Web App",
-      github_link: "",
-      live_link: "",
+      name: "NSS-JMIETI Website",
+      github_link: "https://github.com/manukumar07/NSS",
+      live_link: "nssjmieti.netlify.app",
     },
     {
       // img: project3,
-      name: "Highking",
-      github_link: "",
+      name: "Sorting-Visualizer",
+      github_link: "https://github.com/manukumar07/Sorting---Visualizer..",
       live_link: "",
     },
-    {
-      // img: project4,
-      name: "React Nav",
-      github_link:
-        "",
-      live_link: "",
-    },
-    {
-    //   img: project5,
-      name: "Vue Country",
-      github_link: "",
-      live_link: "",
-    },
+    // {
+    //   // img: project4,
+    //   name: "React Nav",
+    //   github_link:
+    //     "",
+    //   live_link: "",
+    // },
+    // {
+    // //   img: project5,
+    //   name: "Vue Country",
+    //   github_link: "",
+    //   live_link: "",
+    // },
   ];
   return (
     <section id="projects" className="py-10 text-white">

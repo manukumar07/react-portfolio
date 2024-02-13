@@ -22,7 +22,33 @@ const Skills = () => {
       level: "Intermediate",
       count: 80,
     },
+    {
+      logo: "logo-javascript",
+      level: "Intermediate",
+      count: 80,
+    },
+    // {
+    //   logo: "logo-express",
+    //   level: "Intermediate",
+    //   count: 80,
+    // },
+    // {
+    //   logo: "Mongodb",
+    //   level: "Intermediate",
+    //   count: 80,
+    // },
+    // {
+    //   logo: "logo-java",
+    //   level: "Intermediate",
+    //   count: 80,
+    // },
+    // {
+    //   logo: "logo-c",
+    //   level: "Intermediate",
+    //   count: 80,
+    // },
   ];
+
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
       <div className="mt-8 text-gray-100 text-center">
@@ -56,4 +82,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
 

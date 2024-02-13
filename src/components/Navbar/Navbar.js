@@ -1,58 +1,11 @@
 
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-// import "./Navbar.css"
-// // import { useState } from 'react'
-
-
-// const Navbar = () => {
-
-//   return (
-//     <>
-//       <nav className="navbar">
-//       <div className="container">
-//         <div className="logo">
-//           <h1>Portfolio..</h1>
-//         </div>
-//         <div className='nav-elements'>
-//           <ul>
-//             <li>
-//               <Link to="/">Home</Link>
-//             </li>
-//             <li>
-//               <Link to="/about">About</Link>
-//             </li>
-//             <li>
-//               <Link to="/skills">Skills</Link>
-//             </li>
-//             <li>
-//               <Link to="/project">Projects</Link>
-//             </li>
-//             <li>
-//               <Link to="/contact">Contact-us</Link>
-//             </li>
-//             <li>
-//               <Link to="/blog">Blogs</Link>
-//             </li>
-//           </ul>
-          
-//         </div>
-//       </div>
-//     </nav>
-    
-//   )
-// };
-
-// export default Navbar;
-
-
 
 import React, { useEffect, useState } from "react";
-// import Switcher from "../Mode/Switcher";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
+  
   const menuLinks = [
     { name: "HOME", link: "/" },
     { name: "ABOUT", link: "#about" },
@@ -64,7 +17,7 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      const nav = document.querySelector("nav");
+      // const nav = document.querySelector("nav");
       window.scrollY > 0 ? setSticky(true) : setSticky(false);
     });
   
