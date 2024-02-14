@@ -24,11 +24,8 @@ const About = () => {
                 stack, I've successfully developed and deployed scalable and
                 efficient web solutions. From crafting responsive and intuitive
                 frontends using React to building robust and RESTful APIs with
-                Node.js and Express, I enjoy the entire spectrum of Full Stack
-                development. In addition to my proficiency in the MERN stack,
-                I'm well-versed in Java and C. These languages have been
-                instrumental in my journey, allowing me to develop versatile and
-                performant applications. I believe in the power of clean code,
+                Node.js and Express,In addition to my proficiency in the MERN stack,
+                I'm well-versed in Java and C.  I believe in the power of clean code,
                 continuous learning, and collaborative problem-solving. Whether
                 it's working on challenging projects, exploring new
                 technologies, or contributing to open-source initiatives, I'm

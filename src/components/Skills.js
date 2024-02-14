@@ -28,7 +28,7 @@ const Skills = () => {
       count: 80,
     },
     // {
-    //   logo: "logo-express",
+    //   logo: "logo-Express.js",
     //   level: "Intermediate",
     //   count: 80,
     // },
