@@ -7,6 +7,8 @@ import project3 from "../assets/images/project-3.png"
 import project4 from "../assets/images/project-4.png"
 import project1 from "../assets/images/project-1.png"
 import project2 from "../assets/images/project-2.png"
+import project5 from "../assets/images/project-5.png"
+import project6 from "../assets/images/project-6.png"
 
 
 const Project = () => {
@@ -35,12 +37,18 @@ const Project = () => {
       github_link:"https://github.com/manukumar07/Basic-_Code--Editor",
       live_link: "https://mcode-editor.netlify.app/",
     },
-    // {
-    // //   img: project5,
-    //   name: "Vue Country",
-    //   github_link: "",
-    //   live_link: "",
-    // },
+    {
+      img: project5,
+      name: "To-do List",
+      github_link: "https://github.com/manukumar07/To-do-List",
+      live_link: "",
+    },
+    {
+      img: project6,
+      name: "Tic-Toe_Game",
+      github_link: "https://github.com/manukumar07/Tic-Toe-Game",
+      live_link: "",
+    },
   ];
   return (
     <section id="projects" className="py-10 text-white">
