@@ -24,15 +24,15 @@ const About = () => {
                 stack, I've successfully developed and deployed scalable and
                 efficient web solutions. From crafting responsive and intuitive
                 frontends using React to building robust and RESTful APIs with
-                Node.js and Express,In addition to my proficiency in the MERN stack,
-                I'm well-versed in Java and C.  I believe in the power of clean code,
-                continuous learning, and collaborative problem-solving. Whether
-                it's working on challenging projects, exploring new
-                technologies, or contributing to open-source initiatives, I'm
-                always eager to expand my skill set and stay ahead in the
-                dynamic world of software development. I enjoy creating web
-                applications and exploring new technologies to enhance my
-                skills.
+                Node.js and Express,In addition to my proficiency in the MERN
+                stack, I'm well-versed in C++ and C. I believe in the power of
+                clean code, continuous learning, and collaborative
+                problem-solving. Whether it's working on challenging projects,
+                exploring new technologies, or contributing to open-source
+                initiatives, I'm always eager to expand my skill set and stay
+                ahead in the dynamic world of software development. I enjoy
+                creating web applications and exploring new technologies to
+                enhance my skills.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
