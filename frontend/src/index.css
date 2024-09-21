@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto Mono";
+}
+/* body {
+  @apply font-mono;
+} */
+/* Global styles */
+/* Global styles */
+/* Global styles */
+body {
+  @apply bg-[#ECF0F1] text-[#2C3E50];
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-[#FFFFFF];
+}
+
+a {
+  @apply text-[#E67E22];
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  @apply text-[#2980B9];
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-[#E67E22] text-[#FFFFFF] hover:bg-[#2980B9];
+}
+
+.btn-secondary {
+  @apply bg-[#1ABC9C] text-[#FFFFFF] hover:bg-[#34495E];
+}
+
+/* Card styles */
+.card {
+  @apply bg-[#34495E] text-[#ECF0F1] p-6 rounded-lg shadow-md;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  @apply shadow-lg transform scale-105;
+}
+
+/* More specific global styles as needed */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9); // Optional: slight zoom effect
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
